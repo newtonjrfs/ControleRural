@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC0C0C0"
+    tools:context="controlerural.newton.com.controlerural.ActivityCadastroCompra">
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="115dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/cor_botao"
+            android:paddingLeft="0dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonBovino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Bovino"
+                android:textColor="@color/cor_letra" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Aves"
+                android:textColor="@color/cor_letra"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSuino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Suino"
+                android:textColor="@color/cor_letra" />
+
+            <RadioButton
+                android:id="@+id/radioButtonEquino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Equino"
+                android:textColor="@color/cor_letra" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPeixe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Peixes"
+                android:textColor="@color/cor_letra" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
