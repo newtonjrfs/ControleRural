@@ -1,13 +1,13 @@
-package controlerural.newton.com.controlerural;
+package controlerural.newton.com.controlerural.telaCadastroUsuario;
 
-import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import controlerural.newton.com.controlerural.R;
 
 public class ActivityCadastroUsuario extends AppCompatActivity {
 

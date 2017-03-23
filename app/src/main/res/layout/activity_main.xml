@@ -14,27 +14,29 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="180dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="69dp"
-            android:background="@color/cor_botao">
+            android:background="@color/cor_botao"
+            android:id="@+id/relativeLayout">
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/textInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="22dp">
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="22dp"
+                android:visibility="visible">
 
                 <EditText
                     android:id="@+id/tlLgLogin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="casual"
                     android:hint="Usuario"
                     android:inputType="textPersonName"
                     android:textColor="@color/cor_letra" />
@@ -54,23 +56,26 @@
                     android:layout_height="wrap_content"
                     android:hint="Senha"
                     android:inputType="textPassword" />
+
             </android.support.design.widget.TextInputLayout>
 
-            <Button
-                android:id="@+id/botaoLogin"
-                android:layout_width="150dp"
-                android:layout_height="45dp"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="35dp"
-                android:background="@color/cor_fundo"
-                android:fontFamily="casual"
-                android:text="Realizar Login"
-                android:textColor="@color/cor_letra"
-                android:textSize="17sp"
-                android:textStyle="bold" />
-
         </RelativeLayout>
+
+        <Button
+            android:id="@+id/botaoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginTop="76dp"
+            android:layout_weight="1"
+            android:background="@color/cor_botao"
+            android:fontFamily="casual"
+            android:text="Realizar Login"
+            android:textColor="@color/cor_letra"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="323dp" />
 
         <Button
             android:id="@+id/botaoCadastrarUsuario"
@@ -79,8 +84,11 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:background="@color/cor_botao"
-            android:text="Cadastrar"
-            android:textColor="@color/cor_letra" />
+            android:fontFamily="casual"
+            android:text="realizar cadastro"
+            android:textColor="@color/cor_letra"
+            android:textStyle="bold" />
 
     </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFC0C0C0"
-    tools:context="controlerural.newton.com.controlerural.ActivityCadastroCompra">
+    tools:context="controlerural.newton.com.controlerural.telaPrincipal.ActivityCadastroCompra">
 
     <RelativeLayout
         android:layout_width="400dp"
