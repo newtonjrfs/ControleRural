@@ -45,11 +45,9 @@ public class ActivityCadastroUsuario extends AppCompatActivity {
 
                 }else{
 
-                    Toast.makeText(ActivityCadastroUsuario.this,login, Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ActivityCadastroUsuario.this,senha, Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ActivityCadastroUsuario.this,nome, Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ActivityCadastroUsuario.this,email, Toast.LENGTH_SHORT).show();
-                    Toast.makeText(ActivityCadastroUsuario.this,telefone, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActivityCadastroUsuario.this,"login = " + login + " senha = "+
+                            senha+" nome = "+ nome + " email = " + email + " telefone = " + telefone, Toast.LENGTH_LONG).show();
+
                     Toast.makeText(ActivityCadastroUsuario.this,"Cadastro realizado com sucesso", Toast.LENGTH_SHORT).show();
 
                     campoLogin.setText("");

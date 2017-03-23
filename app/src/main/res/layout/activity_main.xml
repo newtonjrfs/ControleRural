@@ -60,13 +60,15 @@
                 android:id="@+id/botaoLogin"
                 android:layout_width="150dp"
                 android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
                 android:layout_marginBottom="35dp"
                 android:background="@color/cor_fundo"
+                android:fontFamily="casual"
                 android:text="Realizar Login"
                 android:textColor="@color/cor_letra"
                 android:textSize="17sp"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true" />
+                android:textStyle="bold" />
 
         </RelativeLayout>
 

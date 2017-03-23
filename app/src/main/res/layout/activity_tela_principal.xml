@@ -23,8 +23,10 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:background="@color/cor_botao"
+            android:fontFamily="casual"
             android:text="Cadastro de compra"
-            android:textColor="@color/cor_letra" />
+            android:textColor="@color/cor_letra"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/tlPrinListCompra"
@@ -34,8 +36,10 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@color/cor_botao"
+            android:fontFamily="casual"
             android:text="listagem de compra"
-            android:textColor="@color/cor_letra" />
+            android:textColor="@color/cor_letra"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/tlPrinConsumo"
@@ -45,8 +49,10 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@color/cor_botao"
+            android:fontFamily="casual"
             android:text="Consumo"
-            android:textColor="@color/cor_letra" />
+            android:textColor="@color/cor_letra"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/tlPrinOfertas"
@@ -56,8 +62,10 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@color/cor_botao"
+            android:fontFamily="casual"
             android:text="ofertas de compra"
-            android:textColor="@color/cor_letra" />
+            android:textColor="@color/cor_letra"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/tlPrinAnotacoes"
@@ -67,8 +75,10 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@color/cor_botao"
+            android:fontFamily="casual"
             android:text="Anotações"
-            android:textColor="@color/cor_letra" />
+            android:textColor="@color/cor_letra"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/tlPrinInformacao"
@@ -78,9 +88,11 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@color/cor_botao"
+            android:fontFamily="casual"
             android:text="Informações"
             android:textColor="@color/cor_letra"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/tlPrinAjuda"
@@ -90,9 +102,11 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@color/cor_botao"
+            android:fontFamily="casual"
             android:text="Ajuda"
             android:textColor="@color/cor_letra"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
