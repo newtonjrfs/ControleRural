@@ -1,86 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC0C0C0">
+    android:background="@color/cor_verdim">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="99dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
 
-        <RelativeLayout
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="69dp"
-            android:background="@color/cor_botao">
+            android:layout_margin="15dp"
+            android:layout_marginTop="22dp"
+            android:padding="5dp"
+            android:visibility="visible">
 
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/textInputLayout"
+            <EditText
+                android:id="@+id/tlLgLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="visible"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="22dp">
-
-                <EditText
-                    android:id="@+id/tlLgLogin"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Usuario"
-                    android:inputType="textPersonName"
-                    android:textColor="@color/cor_letra" />
-            </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/textInputLayout"
-                android:visibility="visible">
-
-                <EditText
-                    android:id="@+id/tlLgSenha"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Senha"
-                    android:inputType="textPassword" />
-            </android.support.design.widget.TextInputLayout>
-
-            <Button
-                android:id="@+id/botaoLogin"
-                android:layout_width="150dp"
-                android:layout_height="45dp"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="35dp"
-                android:background="@color/cor_fundo"
                 android:fontFamily="casual"
-                android:text="Realizar Login"
-                android:textColor="@color/cor_letra"
-                android:textSize="17sp"
-                android:textStyle="bold" />
+                android:hint="Usuario"
+                android:inputType="textPersonName"
+                android:textColor="@color/cor_branco"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
 
-        </RelativeLayout>
-
-        <Button
-            android:id="@+id/botaoCadastrarUsuario"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:background="@color/cor_botao"
-            android:text="Cadastrar"
-            android:textColor="@color/cor_letra" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textInputLayout"
+            android:layout_margin="15dp"
+            android:padding="5dp"
+            android:visibility="visible">
 
-    </RelativeLayout>
-</android.support.constraint.ConstraintLayout>
+            <EditText
+                android:id="@+id/tlLgSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:textColor="@color/cor_branco"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botaoLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botaoCadastrarUsuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:layout_marginRight="125dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:text="Realizar Login"
+        android:textColor="@color/cor_branco"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botaoCadastrarUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:text="cadastrar usuario"
+        android:textColor="@color/cor_branco" />
+
+</RelativeLayout>

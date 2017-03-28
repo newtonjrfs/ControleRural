@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC0C0C0"
-    tools:context="controlerural.newton.com.controlerural.ActivityCadastroCompra">
+    android:background="@color/cor_verdim">
 
-    <RelativeLayout
-        android:layout_width="400dp"
-        android:layout_height="495dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
 
         <RadioGroup
             android:id="@+id/radioGroup"
@@ -23,7 +17,7 @@
             android:layout_marginLeft="18dp"
             android:layout_marginStart="18dp"
             android:layout_marginTop="20dp"
-            android:background="@color/cor_botao"
+            android:background="@color/colorPrimary"
             android:paddingLeft="0dp">
 
             <RadioButton
@@ -35,7 +29,7 @@
                 android:padding="5dp"
                 android:text="Bovino"
                 android:textAllCaps="true"
-                android:textColor="@color/cor_letra"
+                android:textColor="@color/cor_branco"
                 android:textStyle="bold" />
 
             <RadioButton
@@ -47,7 +41,7 @@
                 android:padding="5dp"
                 android:text="Aves"
                 android:textAllCaps="true"
-                android:textColor="@color/cor_letra"
+                android:textColor="@color/cor_branco"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="16dp" />
@@ -61,7 +55,7 @@
                 android:padding="5dp"
                 android:text="Suino"
                 android:textAllCaps="true"
-                android:textColor="@color/cor_letra"
+                android:textColor="@color/cor_branco"
                 android:textStyle="bold" />
 
             <RadioButton
@@ -73,7 +67,7 @@
                 android:padding="5dp"
                 android:text="Equino"
                 android:textAllCaps="true"
-                android:textColor="@color/cor_letra"
+                android:textColor="@color/cor_branco"
                 android:textStyle="bold" />
 
             <RadioButton
@@ -85,7 +79,7 @@
                 android:padding="5dp"
                 android:text="Peixes"
                 android:textAllCaps="true"
-                android:textColor="@color/cor_letra"
+                android:textColor="@color/cor_branco"
                 android:textStyle="bold" />
         </RadioGroup>
 
@@ -97,7 +91,7 @@
             android:layout_marginStart="40dp"
             android:layout_toEndOf="@+id/radioGroup"
             android:layout_toRightOf="@+id/radioGroup"
-            android:background="@color/cor_botao"
+            android:background="@color/colorPrimary"
             android:orientation="vertical">
 
             <Button
@@ -110,6 +104,5 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-    </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
