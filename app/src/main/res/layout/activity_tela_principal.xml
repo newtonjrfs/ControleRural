@@ -1,112 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC0C0C0"
+    android:background="@color/cor_verdim"
+    android:orientation="vertical"
     tools:context="controlerural.newton.com.controlerural.ActivityTelaPrincipal">
 
-    <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        android:orientation="vertical"
-        android:paddingLeft="15dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+    <Button
+        android:id="@+id/tlPrinCadCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:padding="15dp"
+        android:text="Cadastro de compra"
+        android:textColor="@color/cor_branco"
+        android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/tlPrinCadCompra"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/cor_botao"
-            android:fontFamily="casual"
-            android:text="Cadastro de compra"
-            android:textColor="@color/cor_letra"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/tlPrinListCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:padding="15dp"
+        android:text="listagem de compra"
+        android:textColor="@color/cor_branco"
+        android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/tlPrinListCompra"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/cor_botao"
-            android:fontFamily="casual"
-            android:text="listagem de compra"
-            android:textColor="@color/cor_letra"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/tlPrinOfertas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:padding="15dp"
+        android:text="ofertas de compra"
+        android:textColor="@color/cor_branco"
+        android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/tlPrinConsumo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/cor_botao"
-            android:fontFamily="casual"
-            android:text="Consumo"
-            android:textColor="@color/cor_letra"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/tlPrinConsumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:padding="15dp"
+        android:text="Consumo"
+        android:textColor="@color/cor_branco"
+        android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/tlPrinOfertas"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/cor_botao"
-            android:fontFamily="casual"
-            android:text="ofertas de compra"
-            android:textColor="@color/cor_letra"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/tlPrinAnotacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:padding="15dp"
+        android:text="Anotações"
+        android:textColor="@color/cor_branco"
+        android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/tlPrinAnotacoes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/cor_botao"
-            android:fontFamily="casual"
-            android:text="Anotações"
-            android:textColor="@color/cor_letra"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/tlPrinInformacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:padding="15dp"
+        android:text="Informações"
+        android:textColor="@color/cor_branco"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/tlPrinInformacao"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/cor_botao"
-            android:fontFamily="casual"
-            android:text="Informações"
-            android:textColor="@color/cor_letra"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/tlPrinAjuda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:padding="15dp"
+        android:text="Ajuda"
+        android:textColor="@color/cor_branco"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/tlPrinAjuda"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/cor_botao"
-            android:fontFamily="casual"
-            android:text="Ajuda"
-            android:textColor="@color/cor_letra"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityTelaPrincipal">
+        <activity android:name=".ActivityTelaPrincipal"
+            android:label="Tela Principal">
         </activity>
         <activity android:name=".ActivityCadastroCompra"
             android:label="Cadastro de Compras">
