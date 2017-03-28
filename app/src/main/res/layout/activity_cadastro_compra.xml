@@ -7,102 +7,298 @@
     android:background="@color/cor_verdim">
 
 
-        <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="115dp"
-            android:layout_height="150dp"
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="115dp"
+        android:layout_height="170dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="0dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonBovino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:padding="5dp"
+            android:text="Bovino"
+            android:textAllCaps="true"
+            android:textColor="@color/cor_branco"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:padding="5dp"
+            android:text="Aves"
+            android:textAllCaps="true"
+            android:textColor="@color/cor_branco"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSuino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:padding="5dp"
+            android:text="Suino"
+            android:textAllCaps="true"
+            android:textColor="@color/cor_branco"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEquino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:padding="5dp"
+            android:text="Equino"
+            android:textAllCaps="true"
+            android:textColor="@color/cor_branco"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPeixe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:padding="5dp"
+            android:text="Peixes"
+            android:textAllCaps="true"
+            android:textColor="@color/cor_branco"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="180dp"
+        android:layout_height="170dp"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_alignRight="@+id/relativeLayout"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="18dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/colorPrimary"
-            android:paddingLeft="0dp">
+            android:layout_alignParentStart="true">
 
-            <RadioButton
-                android:id="@+id/radioButtonBovino"
+            <EditText
+                android:id="@+id/tlCadData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:ems="10"
                 android:fontFamily="casual"
-                android:padding="5dp"
-                android:text="Bovino"
-                android:textAllCaps="true"
+                android:hint="Data de compra"
+                android:inputType="date"
+                android:textAllCaps="false"
                 android:textColor="@color/cor_branco"
-                android:textStyle="bold" />
+                android:textSize="14sp" />
 
-            <RadioButton
-                android:id="@+id/radioButtonAve"
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/tlCadCompraQuantidade"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:ems="10"
                 android:fontFamily="casual"
-                android:padding="5dp"
-                android:text="Aves"
-                android:textAllCaps="true"
+                android:hint="Quantidade"
+                android:inputType="number"
+                android:textAllCaps="false"
                 android:textColor="@color/cor_branco"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="16dp" />
+                android:textSize="14sp" />
 
-            <RadioButton
-                android:id="@+id/radioButtonSuino"
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/tlCadCompraValor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:ems="10"
                 android:fontFamily="casual"
-                android:padding="5dp"
-                android:text="Suino"
-                android:textAllCaps="true"
+                android:hint="Valor"
+                android:inputType="numberDecimal"
                 android:textColor="@color/cor_branco"
-                android:textStyle="bold" />
+                android:textSize="14sp" />
 
-            <RadioButton
-                android:id="@+id/radioButtonEquino"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="casual"
-                android:padding="5dp"
-                android:text="Equino"
-                android:textAllCaps="true"
-                android:textColor="@color/cor_branco"
-                android:textStyle="bold" />
+        </android.support.design.widget.TextInputLayout>
 
-            <RadioButton
-                android:id="@+id/radioButtonPeixe"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="casual"
-                android:padding="5dp"
-                android:text="Peixes"
-                android:textAllCaps="true"
-                android:textColor="@color/cor_branco"
-                android:textStyle="bold" />
-        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="180dp"
-            android:layout_height="150dp"
-            android:layout_alignTop="@+id/radioGroup"
-            android:layout_marginLeft="40dp"
-            android:layout_marginStart="40dp"
-            android:layout_toEndOf="@+id/radioGroup"
-            android:layout_toRightOf="@+id/radioGroup"
-            android:background="@color/colorPrimary"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/tlCompraBtData"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:text="Data"
-                android:textAlignment="center"
-                android:textStyle="bold" />
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <EditText
+                    android:id="@+id/tlCadDataPagamento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:ems="10"
+                    android:fontFamily="casual"
+                    android:hint="Data Pagamento"
+                    android:inputType="number"
+                    android:textAllCaps="false"
+                    android:textColor="@color/cor_branco"
+                    android:textSize="14sp" />
+
+            </android.support.design.widget.TextInputLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:fontFamily="casual"
+                android:text="Condição de Pagamento"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/cor_branco"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/tlCadCompraCondPagAvista"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:fontFamily="casual"
+                    android:text="A vista"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/cor_branco" />
+
+                <RadioButton
+                    android:id="@+id/tlCadCompraCondPagAprazo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text="a prazo"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/cor_branco" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="145dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="casual"
+            android:padding="5dp"
+            android:text="Descricao"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/cor_branco" />
+
+        <EditText
+            android:id="@+id/tlCadCompraDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:fontFamily="casual"
+            android:inputType="textMultiLine"
+            android:padding="5dp"
+            android:textColor="@color/cor_branco"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/tlCadCompraBotaoCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:text="Cadastrar a compra"
+        android:textColor="@color/cor_branco" />
 
 
 </RelativeLayout>
