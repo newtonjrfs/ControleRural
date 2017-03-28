@@ -1,12 +1,14 @@
 package controlerural.newton.com.controlerural;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ActivityTelaPrincipal extends AppCompatActivity {
+import controlerural.newton.com.controlerural.telaPrincipal.ActivityCadastroCompra;
+
+public class ActivityTelaPrincipal extends Activity {
 
     private Button cadastroCompra;
 

@@ -19,10 +19,10 @@
         <activity android:name=".ActivityTelaPrincipal"
             android:label="Tela Principal">
         </activity>
-        <activity android:name=".ActivityCadastroCompra"
+        <activity android:name=".telaPrincipal.ActivityCadastroCompra"
             android:label="Cadastro de Compras">
         </activity>
-        <activity android:name=".ActivityCadastroUsuario"
+        <activity android:name=".telaCadastroUsuario.ActivityCadastroUsuario"
             android:label="Cadastro de Usuario">
         </activity>
     </application>
