@@ -8,9 +8,9 @@
 
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/tlCadCompraRadioTipoCompra"
         android:layout_width="115dp"
-        android:layout_height="170dp"
+        android:layout_height="180dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -86,7 +86,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="180dp"
-        android:layout_height="170dp"
+        android:layout_height="180dp"
         android:layout_above="@+id/relativeLayout"
         android:layout_alignEnd="@+id/relativeLayout"
         android:layout_alignRight="@+id/relativeLayout"
@@ -100,7 +100,7 @@
             android:layout_alignParentStart="true">
 
             <EditText
-                android:id="@+id/tlCadData"
+                android:id="@+id/tlCadCompraData"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -163,9 +163,9 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignEnd="@+id/linearLayout"
-        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignLeft="@+id/tlCadCompraRadioTipoCompra"
         android:layout_alignRight="@+id/linearLayout"
-        android:layout_alignStart="@+id/radioGroup"
+        android:layout_alignStart="@+id/tlCadCompraRadioTipoCompra"
         android:layout_below="@+id/linearLayout"
         android:layout_marginTop="24dp"
         android:background="@color/colorPrimary"
@@ -183,14 +183,14 @@
                 android:layout_alignParentStart="true">
 
                 <EditText
-                    android:id="@+id/tlCadDataPagamento"
+                    android:id="@+id/tlCadCompraDataPagamento"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:ems="10"
                     android:fontFamily="casual"
                     android:hint="Data Pagamento"
-                    android:inputType="number"
+                    android:inputType="date"
                     android:textAllCaps="false"
                     android:textColor="@color/cor_branco"
                     android:textSize="14sp" />
@@ -216,6 +216,7 @@
                 android:layout_height="wrap_content" />
 
             <RadioGroup
+                android:id="@+id/tlCadCompraCondPagamento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -254,7 +255,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/radioGroup"
+        android:layout_below="@+id/tlCadCompraRadioTipoCompra"
         android:layout_marginLeft="21dp"
         android:layout_marginRight="25dp"
         android:layout_marginTop="145dp"
