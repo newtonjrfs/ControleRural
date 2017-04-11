@@ -50,13 +50,15 @@ public class ActivityCadastroCompra extends AppCompatActivity {
 
     private void printandoVariaveis() {
 
-        Toast.makeText(ActivityCadastroCompra.this,diaCompra,Toast.LENGTH_SHORT).show();
+        Toast.makeText(ActivityCadastroCompra.this,"Comprado dia : "+diaCompra,Toast.LENGTH_SHORT).show();
 
-        Toast.makeText(this,String.valueOf(quantidadeComprada),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Quantidade de : "+String.valueOf(quantidadeComprada),Toast.LENGTH_SHORT).show();
 
-        //Toast.makeText(this,String.format("%.2f",valorPagoProdutos),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Foi pago valor de : "+String.format("%.2f",valorPagoProdutos),Toast.LENGTH_SHORT).show();
 
-        Toast.makeText(this,descricaoDaCompra,Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Dia de pagamento : "+diaPagamento, Toast.LENGTH_SHORT).show();
+
+        Toast.makeText(this,"Descricao da compra : "+descricaoDaCompra,Toast.LENGTH_SHORT).show();
 
 
     }
@@ -73,11 +75,6 @@ public class ActivityCadastroCompra extends AppCompatActivity {
          valorPagoProdutos = Double.valueOf(valorCompra.getText().toString());
 
 
-
-
-        //Toast.makeText(this,String.format("%.2f",quantidadeComprada),Toast.LENGTH_SHORT).show();
-        //Toast.makeText(this,valorPagoProdutos.byteValue(),Toast.LENGTH_SHORT).show();
-
     }
 
     private void tipoPecuariaEscolhido() {
@@ -88,7 +85,7 @@ public class ActivityCadastroCompra extends AppCompatActivity {
 
             String tipoComprado = tipoPecuaria.getText().toString();
 
-            Toast.makeText(ActivityCadastroCompra.this,tipoComprado,Toast.LENGTH_SHORT).show();
+            Toast.makeText(ActivityCadastroCompra.this,"Comprado tipo: " + tipoComprado,Toast.LENGTH_SHORT).show();
             }
     }
 
@@ -98,7 +95,7 @@ public class ActivityCadastroCompra extends AppCompatActivity {
         if (IdOpcaoEscolhida>0){
             formaPagamento= (RadioButton) findViewById(IdOpcaoEscolhida);
             String pagamentoEscolhido = formaPagamento.getText().toString();
-            Toast.makeText(ActivityCadastroCompra.this,pagamentoEscolhido,Toast.LENGTH_SHORT).show();
+            Toast.makeText(ActivityCadastroCompra.this,"Com a condicao de pagamento "+pagamentoEscolhido,Toast.LENGTH_SHORT).show();
         }
     }
 
